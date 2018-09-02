@@ -7,14 +7,14 @@ $(document).ready(function () {
 
     //Generate unique random number for each crystal
     var testArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-    Shuffle(testArray);
+    shuffle(testArray);
     var num1 = (testArray[0]);
     var num2 = (testArray[1]);
     var num3 = (testArray[2]);
     var num4 = (testArray[3]);
 
     //function for random numbers
-    function Shuffle(arrayNumber) {
+    function shuffle(arrayNumber) {
         for (var j, x, i = arrayNumber.length; i; j = parseInt(Math.random() * i), x = arrayNumber[--i], arrayNumber[i] = arrayNumber[j], arrayNumber[j] = x);
         return arrayNumber;
     };
@@ -86,7 +86,7 @@ $(document).ready(function () {
     function reset() {
         totalScoreMatch = Math.floor(Math.random() * ((102 - 19) + 1) + 19);
         $('#totalScore').text(totalScoreMatch);
-        Shuffle(testArray);
+        shuffle(testArray);
         num1 = (testArray[0]);
         num2 = (testArray[1]);
         num3 = (testArray[2]);
