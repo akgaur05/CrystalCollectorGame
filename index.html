@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <title>Crystal Collector</title>
+</head>
+
+<body>
+    <nav class="navbar fixed-top text-uppercase wrapper" id="mainNav">
+        <!-- This text will animate on the page  -->
+        <h1 id="heading">Crystal Collector</h1>
+    </nav>
+    <div class="container">
+        <div class="rules">
+            <h1>Instructions</h1>
+            <div class="row instructions">
+                <div class="col-xs">
+                    <ul class="squares">
+                        <li>You will be given a total score at the start of the game.</li>
+                        <li>By clicking on a crystal specific amount gets added to your score.</li>
+                        <li>You win if your score equals total score otherwise you lose.</li>
+                        <li>The value of each crystal is hidden from you until you click on it.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-9">
+                <h2>Total Score: <span id="totalScore"></span></h2>
+            </div>
+            <div class="col-sm-3">
+                <h4>Wins: <span id="wins"></span></h4>
+                <h4 class="text-left">Losses: <span id="losses"></span></h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Your Score: <span id="yourScore"></span></h2>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-1">
+                <img src="./assets/images/ruby.jpg" class="img-circle red" alt="Red Stone" width="80" height="80" />
+            </div>
+            <div class="col-sm-1">
+                <img src="./assets/images/sapphire.jpg" class="img-circle blue" alt="Blue Stone" width="80" height="80" />
+            </div>
+            <div class="col-sm-1">
+                <img src="./assets/images/topaz.jpg" class="img-circle brown" alt="Topaz Stone" width="80" height="80" />
+            </div>
+            <div class="col-sm-1">
+                <img src="./assets/images/green.jpg" class="img-circle green" alt="Green Stone" width="80" height="80" />
+            </div>
+        </div>
+        <br>
+        <div class="row">
+                <div class="col-sm-12">
+                    <h3><span id="alertMessage"></span></h3>
+                </div>
+        </div>
+    </div>
+</body>
+<!-- Javascript -->
+<script src="./assets/javascript/game.js"></script>
+
+</html>
