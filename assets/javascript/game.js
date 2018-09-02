@@ -31,8 +31,8 @@ $(document).ready(function () {
     // Clicking crystals
     $('.red').on('click', function () {
         var image = $(".red");
-        image.animate({ height: '120px' }, "fast");
-        image.animate({ height: '100px' }, "fast");
+        image.animate({ width: '70px' }, "fast");
+        image.animate({ width: '100px' }, "fast");
         playerTotal = playerTotal + num1;
         $('#yourScore').text(playerTotal);
         if (playerTotal == totalScoreMatch) {
@@ -44,8 +44,8 @@ $(document).ready(function () {
     })
     $('.blue').on('click', function () {
         var image = $(".blue");
-        image.animate({ height: '120px' }, "fast");
-        image.animate({ height: '100px' }, "fast");
+        image.animate({ width: '70px' }, "fast");
+        image.animate({ width: '100px' }, "fast");
         playerTotal = playerTotal + num2;
         $('#yourScore').text(playerTotal);
         if (playerTotal == totalScoreMatch) {
@@ -57,8 +57,8 @@ $(document).ready(function () {
     })
     $('.brown').on('click', function () {
         var image = $(".brown");
-        image.animate({ height: '120px' }, "fast");
-        image.animate({ height: '100px' }, "fast");
+        image.animate({ width: '70px' }, "fast");
+        image.animate({ width: '100px' }, "fast");
         playerTotal = playerTotal + num3;
         $('#yourScore').text(playerTotal);
         if (playerTotal == totalScoreMatch) {
@@ -70,8 +70,8 @@ $(document).ready(function () {
     })
     $('.green').on('click', function () {
         var image = $(".green");
-        image.animate({ height: '120px' }, "fast");
-        image.animate({ height: '100px' }, "fast");
+        image.animate({ width: '70px' }, "fast");
+        image.animate({ width: '100px' }, "fast");
         playerTotal = playerTotal + num4;
         $('#yourScore').text(playerTotal);
 
