@@ -92,24 +92,26 @@ $(document).ready(function () {
         num3 = (testArray[2]);
         num4 = (testArray[3]);
         playerTotal = 0;
+        $("#yourScore").css("color", "#333");
         $('#yourScore').text(playerTotal);
         $('#alertMessage').text("");
     }
     // Display wins
     function checkWin() {
-        var winText = "Congrats! You won!";
+        var winText = " Congrats! You won!";
         wins++;
         $('#wins').text(wins);
-        $('#alertMessage').text(winText);
+        $("#yourScore").css("color", "red");
+        $('#yourScore').text(winText);
         setTimeout(reset, 1000);
     }
     // Display losses
     function checklosses() {
-        var loseText = "Sorry! You lose!";
+        var loseText = " Sorry! You lose!";
         losses++;
         $('#losses').text(losses);
-        $('#alertMessage').text(loseText);
+        $("#yourScore").css("color", "red");
+        $('#yourScore').text(loseText);
         setTimeout(reset, 1000);
     }
-
 }); 

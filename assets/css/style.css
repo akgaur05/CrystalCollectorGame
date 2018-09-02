@@ -95,10 +95,7 @@ html,body {
     font-size: 2rem;
   }
 
-  #alertMessage{
-    color: rgb(148, 36, 36);
-}
-  
+
 img {
     border-radius: 50%;
 }
@@ -117,4 +114,6 @@ h2,h3{
     font-size: 3rem;
     font-weight:bold;
 }
-  
+#alertMessage{
+  color: rgb(148, 36, 36);
+}
